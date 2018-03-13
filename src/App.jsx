@@ -13,6 +13,7 @@ class App extends Component{
 
 
 	changeDeadline(){
+
 		this.setState({deadline:this.state.newDeadline})
 	}
 
@@ -23,7 +24,7 @@ class App extends Component{
 				<Clock deadline={this.state.deadline}/>
 				<Form inline>
 					<FormControl className="deadline-input" placeholder="New date" onChange={event => this.setState({newDeadline:event.target.value}) }/>
-					<Button onClick={() =>  this.changeDeadline()}>Submit</Button>
+					<Button onClick={() => this.changeDeadline()}>Submit</Button>
 				</Form>
 			</div>
 		)
